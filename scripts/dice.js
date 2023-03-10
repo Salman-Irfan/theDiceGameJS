@@ -7,7 +7,7 @@ let dice2 = document.querySelectorAll("img")[1];
 
 let turnIndicator = document.querySelector("#turn-indicator");
 
-dice1.addEventListener("click", function () {
+dice1.addEventListener("click", () => {
     if (playerTurn === 1) {
         player1Number = Math.floor(Math.random() * 6) + 1;
         let randomDiceImage1 = "dice" + player1Number + ".png";
@@ -18,7 +18,7 @@ dice1.addEventListener("click", function () {
     }
 });
 
-dice2.addEventListener("click", function () {
+dice2.addEventListener("click", () => {
     if (playerTurn === 2) {
         player2Number = Math.floor(Math.random() * 6) + 1;
         let randomDiceImage2 = "dice" + player2Number + ".png";
